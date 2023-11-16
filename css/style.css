@@ -1,0 +1,87 @@
+body{
+    box-sizing: border-box;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main_img{
+    width: 100%;
+}
+
+.container{
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+    background-image: url("../assets/img/iStock-1323313187_edit.jpg");
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 2000px;
+    background-color: wh;
+}
+
+
+
+/* HEADER */
+.container__header{
+    width: 100%;
+    height: 45px;
+    top: 20px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+
+}
+
+.header_div{
+    width: 500px;
+    height: 45px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.11);
+    backdrop-filter: blur(5px);
+    padding: 0 10px;
+    z-index: 100;
+    box-shadow: 0px 0px 10px inset rgba(0, 0, 0, 0.144);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.144);
+}
+
+.header_list{
+    list-style: none;
+    display: flex;
+    margin-right: 10px;
+}
+
+.list_item{
+    margin: 15px;
+}
+
+.header_btn{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.header_a{
+    color: white;
+    text-decoration: none;
+}
+
+
+/* MAIN */
+.container__main{
+    top: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position-y: -80px;
+}
+
+.Main_h2--Título{
+    position: absolute;
+    left: 90px;
+    top: 10px;
+    font-size: 6em;
+}

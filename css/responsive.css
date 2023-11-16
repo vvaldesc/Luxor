@@ -1,0 +1,20 @@
+.container__header{
+    grid-area: header;
+}
+
+.container__main{
+    grid-area: main;
+}
+
+.container__footer{
+    grid-area: footer;
+}
+
+.container{
+    grid-template:
+    "header " 200px
+    "main " 200px
+    "footer " 200px /
+    1fr;
+  
+}
