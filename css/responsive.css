@@ -4,6 +4,7 @@
 
 .container__main{
     grid-area: main;
+    border: 1px solid blue;
 }
 
 .container__footer{
@@ -13,7 +14,7 @@
 .container{
     grid-template:
     "header " 200px
-    "main " 200px
+    "main " 1000px
     "footer " 200px /
     1fr;
 }
