@@ -7,7 +7,7 @@ html {
 }
 
 
-body{
+body {
     box-sizing: border-box;
     background-color: rgb(236, 236, 236);
     color: white;
@@ -19,8 +19,7 @@ body{
 
 }
 
-.container{
-    border: 1px solid blue;
+.container {
     position: relative;
     padding: 0;
     /*width: 1000px;*/
@@ -35,18 +34,18 @@ body{
     border-top-right-radius: 10px;
 }
 
-.main_img{
+.main_img {
     width: 100%;
     display: flex;
     justify-content: center;
     align-content: center;
     margin: 0;
 }
-/*
 
-.main_img::after{
 
-    content: "";
+.main_img::after {
+
+    content: "dd";
     border: 1px solid red;
     display: block;
     z-index: 50;
@@ -64,23 +63,25 @@ body{
 }
 
 
-*/
+
 /* HEADER */
-.container_header{
+.container_header {
     width: 100%;
     height: 45px;
     top: 20px;
     position: fixed;
 
-    left: 50%; /* Centra el encabezado horizontalmente */
-    transform: translateX(-50%); /* Ajusta para centrar completamente */
+    left: 50%;
+    /* Centra el encabezado horizontalmente */
+    transform: translateX(-50%);
+    /* Ajusta para centrar completamente */
 
     display: flex;
     justify-content: center;
     z-index: 0;
 }
 
-.header_div{
+.header_div {
     width: 550px;
     display: flex;
     justify-content: space-around;
@@ -95,27 +96,27 @@ body{
     transition: 0.4s all;
 }
 
-.header_div:hover{
+.header_div:hover {
     background-color: rgba(34, 34, 34, 0.35);
     box-shadow: 0px 0px 2px rgba(63, 63, 63, 0.347);
     transition: 0.4s all;
 }
 
-.header_list{
+.header_list {
     list-style: none;
     display: flex;
     margin-right: 10px;
 }
 
-.list_item{
+.list_item {
     margin: 15px;
 }
 
-.header_btn{
+.header_btn {
     background-color: rgba(255, 255, 255, 0);
 }
 
-.header_a{
+.header_a {
     border-radius: 10px;
     color: white;
     text-decoration: none;
@@ -135,7 +136,7 @@ body{
 /* MAIN */
 
 /* PORTADA */
-.container_main{
+.container_main {
     top: 0;
     width: 100%;
     background-repeat: no-repeat;
@@ -172,7 +173,7 @@ body{
 /* TEXTO */
 
 
-.main_h2--Título{
+.main_h2--Título {
     display: none;
     position: absolute;
     left: 58%;
@@ -183,7 +184,7 @@ body{
     z-index: 20;
 }
 
-.main_h3--Título{
+.main_h3--Título {
     display: none;
     position: absolute;
     left: 58%;
@@ -194,8 +195,7 @@ body{
     z-index: 20;
 }
 
-.div_p--presentación{
+.div_p--presentación {
     color: black;
-    font-size:4em;
+    font-size: 4em;
 }
-
