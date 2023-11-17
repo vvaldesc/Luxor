@@ -5,6 +5,7 @@ body{
     font-family: 'Pixelify Sans', sans-serif;
     font-family: 'Playfair Display', serif;
     font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 
 .main_img{
@@ -16,8 +17,8 @@ body{
     width: 100%;
     overflow: hidden;
     background-image: url("../assets/img/iStock-1323313187_edit.jpg");
-
-    background-size: contain;
+    background-size: 100%;
+    background-position-x: center;
     background-repeat: no-repeat;
     height: 2000px;
     background-color: wh;
@@ -33,11 +34,11 @@ body{
     position: fixed;
     display: flex;
     justify-content: center;
-
+    z-index: 0;
 }
 
 .header_div{
-    width: 500px;
+    width: 550px;
     height: 45px;
     display: flex;
     justify-content: space-around;
@@ -49,6 +50,12 @@ body{
     z-index: 100;
     box-shadow: 0px 0px 10px inset rgba(0, 0, 0, 0.144);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.144);
+    transition: 0.4s all;
+}
+
+.header_div:hover{
+    box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.147);
+    transition: 0.4s all;
 }
 
 .header_list{
@@ -66,12 +73,15 @@ body{
 }
 
 .header_a{
+    border-radius: 10px;
     color: white;
     text-decoration: none;
+    padding: 5px;
 }
 
-
 /* MAIN */
+
+/* PORTADA */
 .container__main{
     top: 0;
     width: 100%;
@@ -84,4 +94,7 @@ body{
     left: 90px;
     top: 10px;
     font-size: 6em;
+    animation: titulo 70s forwards;
+    animation-iteration-count: infinite;
+    z-index: 20;
 }
