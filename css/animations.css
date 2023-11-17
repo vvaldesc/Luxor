@@ -2,14 +2,10 @@
 @keyframes titulo {
     0%{
         transform: translateY(0px);
-        filter: blur(1px);
     }
     50%{
         transform: translateY(90px);
-        filter: blur(0);
     }
     100%{
         transform: translateY(0px);
-        filter: blur(0);
-
     }}
