@@ -19,7 +19,13 @@ body {
 }
 
 .body--oscuro{
-    background-color: rgb(78, 78, 78);
+    background-image: url(svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyYWRpYWxHcmFkaWVudCBpZD0iZyI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjOTQ5NDk0Ii8+PHN0b3Agb2Zmc2V0PSIwLjg4IiBzdG9wLWNvbG9yPSIjNDc0NzQ3Ii8+PC9yYWRpYWxHcmFkaWVudD48cmVjdCB4PSIwJSIgeT0iMCUiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiM0NzQ3NDciIC8+PHJlY3QgeD0iLTEwMCUiIHk9Ii0xNDcuODQ0OCUiIHdpZHRoPSIyMDAlIiBoZWlnaHQ9IjI5NS42ODk3JSIgZmlsbD0idXJsKCNnKSIgLz48L3N2Zz4=);
+    background-image: -webkit-gradient(radial, 0% 0%, 0, 0% 0%, 343, color-stop(0%, #949494), color-stop(88%, #474747));
+    background-image: -webkit-radial-gradient(left top, farthest-side circle, #949494 0%, #474747 88%);
+    background-image: -moz-radial-gradient(left top, farthest-side circle, #949494 0%, #474747 88%);
+    background-image: -ms-radial-gradient(left top, farthest-side circle, #949494 0%, #474747 88%);
+    background-image: -o-radial-gradient(left top, farthest-side circle, #949494 0%, #474747 88%);
+    background-image: radial-gradient(farthest-side circle at left top, #949494 0%, #474747 88%);
 }
 
 .container {
@@ -125,8 +131,23 @@ body {
 .container_main {
     top: 0;
     width: 100%;
-    background-repeat: no-repeat;
-    background-position-y: -80px;
+}
+
+
+.container_main--1{
+    background-image: url(svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyYWRpYWxHcmFkaWVudCBpZD0iZyI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMWYxZjFmIi8+PHN0b3Agb2Zmc2V0PSIwLjg4IiBzdG9wLWNvbG9yPSIjNDc0NzQ3Ii8+PC9yYWRpYWxHcmFkaWVudD48cmVjdCB4PSIwJSIgeT0iMCUiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiM0NzQ3NDciIC8+PHJlY3QgeD0iLTEwMCUiIHk9Ii0xNDcuODQ0OCUiIHdpZHRoPSIyMDAlIiBoZWlnaHQ9IjI5NS42ODk3JSIgZmlsbD0idXJsKCNnKSIgLz48L3N2Zz4=);
+    background-image: -webkit-gradient(radial, 0% 0%, 0, 0% 0%, 343, color-stop(0%, #1f1f1f), color-stop(88%, #474747));
+    background-image: -webkit-radial-gradient(left top, farthest-side circle, #1f1f1f 0%, #474747 88%);
+    background-image: -moz-radial-gradient(left top, farthest-side circle, #1f1f1f 0%, #474747 88%);
+    background-image: -ms-radial-gradient(left top, farthest-side circle, #1f1f1f 0%, #474747 88%);
+    background-image: -o-radial-gradient(left top, farthest-side circle, #1f1f1f 0%, #474747 88%);
+    background-image: radial-gradient(farthest-side circle at left top, #1f1f1f 0%, #474747 88%);
+    box-shadow: 1px 1px 1px #1f1f1f;
+}
+
+.container_main--articlesWrap{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -167,17 +188,35 @@ body {
     margin: 0;
 }
 
-.main_container{
+.main_container,.main_container--1{
     width: 1100px;
     margin: auto;
     position: relative;
     top: -150px;
 }
 
+.main_container--1{
+    width: 1100px;
+    margin: auto;
+    position: static;
+}
 
 
-/* DIV PARA EL SECTION DE ARTÍCTULOS */
 
+/* ARTÍCULOS */
+.main_article{
+    border: 1px solid #1f1f1f;
+    height: 500px;
+    overflow: hidden;
+}
+
+.article_img{
+    height: 300px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
 
 
 /* FOOTER */
