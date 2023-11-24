@@ -18,3 +18,135 @@
         transform: translateY(40px);
     }
 }
+
+@keyframes articlesUrl--2 {
+    0% {
+        background-image: url(../assets/img/sillon-en-chenilla-nicxon\ \(1\).webp);
+    }
+    15% {
+        background-image: url(../assets/img/sillon-en-chenilla-nicxon\ \(1\).webp);
+    }
+    20% {
+        background-image: url(../assets/img/sillon-en-chenilla-nicxon\ \(2\).webp);
+    }
+    40% {
+        background-image: url(../assets/img/sillon-en-chenilla-nicxon\ \(2\).webp);
+    }
+    45% {
+        background-image: url(../assets/img/sillon-en-chenilla-nicxon\ \(3\).webp);
+    }
+    65% {
+        background-image: url(../assets/img/sillon-en-chenilla-nicxon\ \(3\).webp);
+    }
+    70% {
+        background-image: url(../assets/img/sillon-en-chenilla-nicxon\ \(4\).webp);
+    }
+    90% {
+        background-image: url(../assets/img/sillon-en-chenilla-nicxon\ \(4\).webp);
+    }
+    95% {
+        background-image: url(../assets/img/sillon-en-chenilla-nicxon\ \(1\).webp);
+    }
+    100% {
+        background-image: url(../assets/img/sillon-en-chenilla-nicxon\ \(1\).webp);
+    }
+}
+
+@keyframes articlesUrl--1 {
+    0% {
+        background-image: url(../assets/img/lampara-de-pie-en-ceramica-warwick.webp);
+    }
+    15% {
+        background-image: url(../assets/img/lampara-de-pie-en-ceramica-warwick.webp);
+    }
+    20% {
+        background-image: url(../assets/img/lampara-de-pie-en-ceramica-warwick\ \(1\).webp);
+    }
+    40% {
+        background-image: url(../assets/img/lampara-de-pie-en-ceramica-warwick\ \(1\).webp);
+    }
+    45% {
+        background-image: url(../assets/img/lampara-de-pie-en-ceramica-warwick\ \(2\).webp);
+    }
+    65% {
+        background-image: url(../assets/img/lampara-de-pie-en-ceramica-warwick\ \(2\).webp);
+    }
+    70% {
+        background-image: url(../assets/img/lampara-de-pie-en-ceramica-warwick\ \(3\).webp);
+    }
+    90% {
+        background-image: url(../assets/img/lampara-de-pie-en-ceramica-warwick\ \(3\).webp);
+    }
+    95% {
+        background-image: url(../assets/img/lampara-de-pie-en-ceramica-warwick.webp);
+    }
+    100% {
+        background-image: url(../assets/img/lampara-de-pie-en-ceramica-warwick.webp);
+    }
+}
+
+@keyframes articlesUrl--3 {
+    0% {
+        background-image: url(../assets/img/sillon-colgante-en-ratan-taveira.webp);
+    }
+    15% {
+        background-image: url(../assets/img/sillon-colgante-en-ratan-taveira.webp);
+    }
+    20% {
+        background-image: url(../assets/img/sillon-colgante-en-ratan-taveira\ \(1\).webp);
+    }
+    40% {
+        background-image: url(../assets/img/sillon-colgante-en-ratan-taveira\ \(1\).webp);
+    }
+    45% {
+        background-image: url(../assets/img/sillon-colgante-en-ratan-taveira\ \(2\).webp);
+    }
+    65% {
+        background-image: url(../assets/img/sillon-colgante-en-ratan-taveira\ \(2\).webp);
+    }
+    70% {
+        background-image: url(../assets/img/sillon-colgante-en-ratan-taveira\ \(3\).webp);
+    }
+    90% {
+        background-image: url(../assets/img/sillon-colgante-en-ratan-taveira\ \(3\).webp);
+    }
+    95% {
+        background-image: url(../assets/img/sillon-colgante-en-ratan-taveira.webp);
+    }
+    100% {
+        background-image: url(../assets/img/sillon-colgante-en-ratan-taveira.webp);
+    }
+}
+
+@keyframes articlesUrl--4 {
+    0% {
+        background-image: url(../assets/img/cojin-para-sofa-modular-en-algodon-dhel.webp);
+    }
+    15% {
+        background-image: url(../assets/img/cojin-para-sofa-modular-en-algodon-dhel.webp);
+    }
+    20% {
+        background-image: url(../assets/img/cojin-para-sofa-modular-en-algodon-dhel\ \(1\).webp);
+    }
+    40% {
+        background-image: url(../assets/img/cojin-para-sofa-modular-en-algodon-dhel\ \(1\).webp);
+    }
+    45% {
+        background-image: url(../assets/img/cojin-para-sofa-modular-en-algodon-dhel\ \(2\).webp);
+    }
+    65% {
+        background-image: url(../assets/img/cojin-para-sofa-modular-en-algodon-dhel\ \(2\).webp);
+    }
+    70% {
+        background-image: url(../assets/img/cojin-para-sofa-modular-en-algodon-dhel\ \(3\).webp);
+    }
+    90% {
+        background-image: url(../assets/img/cojin-para-sofa-modular-en-algodon-dhel\ \(3\).webp);
+    }
+    95% {
+        background-image: url(../assets/img/cojin-para-sofa-modular-en-algodon-dhel.webp);
+    }
+    100% {
+        background-image: url(../assets/img/cojin-para-sofa-modular-en-algodon-dhel.webp);
+    }
+}

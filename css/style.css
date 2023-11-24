@@ -19,7 +19,7 @@ body {
 }
 
 .body--oscuro{
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(107, 107, 107);
 }
 
 .container, .container--noMQ{
@@ -43,7 +43,7 @@ body {
 .container--noMQ{
     margin: auto;
     max-width: 1200px;
-    background-color: white;
+    background-color: rgb(236, 236, 236);
     height: 2000px;
 }
 
@@ -70,18 +70,16 @@ body {
     height: 45px;
     top: 20px;
     position: fixed;
-
     left: 50%;
     /* Centra el encabezado horizontalmente */
     transform: translateX(-50%);
     /* Ajusta para centrar completamente */
-
     display: flex;
     justify-content: center;
     z-index: 0;
 }
 
-.header_div {
+.header_div, .header_div--article {
     width: 550px;
     display: flex;
     justify-content: space-around;
@@ -96,10 +94,31 @@ body {
     transition: 0.4s all;
 }
 
+.header_div--article{
+    width: 150px;
+    height: 30px;
+    background-color: rgba(34, 34, 34, 0.35);
+    box-shadow: 0px 0px 2px rgba(63, 63, 63, 0.347);
+    transition: 0.4s all;
+    padding: 0;
+}
+
 .header_div:hover {
     background-color: rgba(34, 34, 34, 0.35);
     box-shadow: 0px 0px 2px rgba(63, 63, 63, 0.347);
     transition: 0.4s all;
+}
+
+.header_div--article:hover {
+    background-color: rgba(255, 255, 255, 0.11);
+    box-shadow: 0px 0px 10px inset rgba(0, 0, 0, 0.144);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.144);
+    transition: 0.4s all;
+}
+
+.header_div--article:hover .header_a--article{
+    color: black;
+    font-weight: bold;
 }
 
 .header_list {
@@ -116,7 +135,7 @@ body {
     background-color: rgba(255, 255, 255, 0);
 }
 
-.header_a {
+.header_a, .header_a--rounded, .header_a--article {
     border-radius: 10px;
     color: white;
     text-decoration: none;
@@ -126,8 +145,16 @@ body {
     box-shadow: 0px 1px 2px rgba(255, 255, 255, 0.445);
     */
     /* https://www.visualcsstools.com/ */
-
     transition: all 0.4s;
+}
+
+.header_a--rounded{
+    border: 2px solid rgba(255, 255, 255, 0.479);
+    border-radius: 25%;
+}
+
+.header_a--article{
+    font-size: small;
 }
 
 .section_a{
@@ -160,7 +187,6 @@ body {
 
 /* MAIN */
 
-/* PORTADA */
 .container_main {
     top: 0;
     width: 100%;
@@ -185,6 +211,7 @@ body {
     flex-wrap: wrap;
 }
 
+/* PORTADA */
 
 /* SECTIONS */
 
@@ -276,6 +303,12 @@ body {
     margin: 0;
 }
 
+.main_section--2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .main_container,.main_container--1{
     width: 1100px;
     margin: auto;
@@ -289,17 +322,78 @@ body {
     position: static;
 }
 
-
-
-/* ARTÍCULOS */
-.main_article{
-    border: 1px solid #1f1f1f;
+.main_section--banner{
+    height: 80px;
+    display: flex;
+    align-items: center;
     overflow: hidden;
+    background-color: black;
 }
 
-.article_img{
-    height: 300px;
+/* ARTÍCULOS */
+.main_article, .main_article--1,  .main_article--2,  .main_article--3,  .main_article--4{
+    height: 500px;
+    margin: 15px;
+    overflow: hidden;
     width: 400px;
+    background-size: cover;
+    background-position-y: -60px;
+    transition: all 200ms;
+}
+
+.main_article--1,  .main_article--2,  .main_article--3,  .main_article--4{
+    display: flex;
+    align-items: end;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.main_article--1{
+    background-image: url(../assets/img/lampara-de-pie-en-ceramica-warwick.webp);
+}
+.main_article--1:hover{
+    animation: articlesUrl--1 infinite 5s;
+}
+
+.main_article--2{
+    background-image: url(../assets/img/sillon-en-chenilla-nicxon\ \(1\).webp);
+}
+.main_article--2:hover{
+    animation: articlesUrl--2 infinite 5s;
+}
+
+.main_article--3{
+    background-image: url(../assets/img/sillon-colgante-en-ratan-taveira.webp);
+}
+.main_article--3:hover{
+    animation: articlesUrl--3 infinite 5s;
+}
+
+.main_article--4{
+    background-image: url(../assets/img/cojin-para-sofa-modular-en-algodon-dhel.webp);
+}
+.main_article--4:hover{
+    animation: articlesUrl--4 infinite 5s;
+}
+
+.main_article--5{
+    background-image: url(../assets/img/sillon-en-chenilla-nicxon\ \(1\).webp);
+}
+.main_article--5:hover{
+    animation: articlesUrl--5 infinite 5s;
+}
+
+.main_article--6{
+    background-image: url(../assets/img/sillon-en-chenilla-nicxon\ \(1\).webp);
+}
+.main_article--6:hover{
+    animation: articlesUrl--6 infinite 5s;
+}
+
+
+
+.article_img{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-content: center;
