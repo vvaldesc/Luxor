@@ -19,6 +19,8 @@
     }
 }
 
+/* Animacion artículos */
+
 @keyframes articlesUrl--2 {
     0% {
         background-image: url(../assets/img/sillon-en-chenilla-nicxon\ \(1\).webp);
