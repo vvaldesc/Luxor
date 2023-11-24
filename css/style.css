@@ -44,7 +44,6 @@ body {
     margin: auto;
     max-width: 1200px;
     background-color: rgb(236, 236, 236);
-    height: 2000px;
 }
 
 .main_img {
@@ -331,7 +330,7 @@ body {
 }
 
 /* ARTÍCULOS */
-.main_article, .main_article--1,  .main_article--2,  .main_article--3,  .main_article--4{
+.main_article, .main_article--1,  .main_article--2,  .main_article--3,  .main_article--4, .main_article--5, .main_article--6{
     height: 500px;
     margin: 15px;
     overflow: hidden;
@@ -341,7 +340,7 @@ body {
     transition: all 200ms;
 }
 
-.main_article--1,  .main_article--2,  .main_article--3,  .main_article--4{
+.main_article--1,  .main_article--2,  .main_article--3,  .main_article--4, .main_article--5, .main_article--6{
     display: flex;
     align-items: end;
     padding-bottom: 10px;
@@ -377,14 +376,14 @@ body {
 }
 
 .main_article--5{
-    background-image: url(../assets/img/sillon-en-chenilla-nicxon\ \(1\).webp);
+    background-image: url(../assets/img/decoracion-de-pared-josep.webp);
 }
 .main_article--5:hover{
     animation: articlesUrl--5 infinite 5s;
 }
 
 .main_article--6{
-    background-image: url(../assets/img/sillon-en-chenilla-nicxon\ \(1\).webp);
+    background-image: url(../assets/img/figura-decorativa-en-mdf-adara.webp);
 }
 .main_article--6:hover{
     animation: articlesUrl--6 infinite 5s;

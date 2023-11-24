@@ -150,3 +150,69 @@
         background-image: url(../assets/img/cojin-para-sofa-modular-en-algodon-dhel.webp);
     }
 }
+
+@keyframes articlesUrl--5 {
+    0% {
+        background-image: url(../assets/img/decoracion-de-pared-josep.webp);
+    }
+    15% {
+        background-image: url(../assets/img/decoracion-de-pared-josep.webp);
+    }
+    20% {
+        background-image: url(../assets/img/decoracion-de-pared-josep.jpg);
+    }
+    40% {
+        background-image: url(../assets/img/decoracion-de-pared-josep.jpg);
+    }
+    45% {
+        background-image: url(../assets/img/decoracion-de-pared-josep\ \(1\).webp);
+    }
+    65% {
+        background-image: url(../assets/img/decoracion-de-pared-josep\ \(1\).webp);
+    }
+    70% {
+        background-image: url(../assets/img/decoracion-de-pared-josep\ \(2\).webp);
+    }
+    90% {
+        background-image: url(../assets/img/decoracion-de-pared-josep\ \(2\).webp);
+    }
+    95% {
+        background-image: url(../assets/img/decoracion-de-pared-josep.webp);
+    }
+    100% {
+        background-image: url(../assets/img/decoracion-de-pared-josep.webp);
+    }
+}
+
+@keyframes articlesUrl--6 {
+    0% {
+        background-image: url(../assets/img/figura-decorativa-en-mdf-adara.webp);
+    }
+    15% {
+        background-image: url(../assets/img/figura-decorativa-en-mdf-adara.webp);
+    }
+    20% {
+        background-image: url(../assets/img/figura-decorativa-en-mdf-adara\ \(1\).webp);
+    }
+    40% {
+        background-image: url(../assets/img/figura-decorativa-en-mdf-adara\ \(1\).webp);
+    }
+    45% {
+        background-image: url(../assets/img/figura-decorativa-en-mdf-adara\ \(2\).webp);
+    }
+    65% {
+        background-image: url(../assets/img/figura-decorativa-en-mdf-adara\ \(2\).webp);
+    }
+    70% {
+        background-image: url(../assets/img/figura-decorativa-en-mdf-adara\ \(3\).webp);
+    }
+    90% {
+        background-image: url(../assets/img/figura-decorativa-en-mdf-adara\ \(3\).webp);
+    }
+    95% {
+        background-image: url(../assets/img/figura-decorativa-en-mdf-adara.webp);
+    }
+    100% {
+        background-image: url(../assets/img/figura-decorativa-en-mdf-adara.webp);
+    }
+}
