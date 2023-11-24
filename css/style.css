@@ -6,7 +6,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 body {
     box-sizing: border-box;
     background-color: rgb(236, 236, 236);
@@ -62,6 +61,10 @@ body {
     margin: 0;
 }
 
+.main_video--1{
+    position: relative;
+    z-index: 0;
+}
 
 /* HEADER */
 .container_header {
