@@ -18,6 +18,8 @@ main{
 
 .container__footer{
     grid-area: footer;
+    display: flex;
+    justify-content: space-around;
 }
 
 /* Oculto elementos en mobile first */
@@ -39,7 +41,14 @@ main{
     display: none;
 }
 
-/*  */
+/* Footer */
+.footer_div--info{
+    display: none;
+}
+
+.footer_div--rss{
+    display: none;
+}
 
 @media screen and (min-width: 600px) {
     .div_i--menuIcono{
@@ -80,6 +89,15 @@ main{
 }
 
 @media screen and (min-width: 825px) {
+
+    .footer_div--info{
+        display: block;
+    }
+    
+    .footer_div--rss{
+        display: block;
+    }
+
 
     .container--MQ{
     

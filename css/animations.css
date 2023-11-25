@@ -1,24 +1,18 @@
 @keyframes titulo {
     0%{
-        transform: translateY(0px);
-    }
-    50%{
-        transform: translateY(90px);
+        transform: translateX(0px);
     }
     100%{
-        transform: translateY(0px);
+        transform: translateX(285px);
     }
 }
 
 @keyframes titulo--h3 {
     0%{
-        transform: translate(0px, 0px);
-    }
-    50%{
-        transform: translate(60px, 90px);
+        transform: translateX(300px);
     }
     100%{
-        transform: translate(0px, 0px);
+        transform: translateX(-270px);
     }
 }
 

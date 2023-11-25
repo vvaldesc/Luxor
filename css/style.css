@@ -115,7 +115,7 @@ body {
     /* Ajusta para centrar completamente */
     display: flex;
     justify-content: center;
-    z-index: 0;
+    z-index: 2000;
 }
 
 
@@ -326,6 +326,7 @@ body {
 .container_main,.container_main--index {
     top: 0;
     width: 100%;
+
 }
 
 .container_main--index {
@@ -458,7 +459,7 @@ body {
     padding: 20px;
     overflow: hidden;
     position: relative;
-    z-index: 0;
+    z-index: 1000;
     transition: 500ms;
 }
 
@@ -527,7 +528,7 @@ body {
     width: 1100px;
     margin: auto;
     position: relative;
-    top: -150px;
+    z-index: 10;
 }
 
 .main_container--1{
@@ -657,6 +658,8 @@ body {
 }
 
 .main_article--4--detalles{
+    display: flex;
+    justify-content: end;
     width: 300px;
     height: 450px;
     background-position-y: 0px;
@@ -812,6 +815,8 @@ body {
 
 /* FOOTER */
 
+
+
 .item_a--footer{
     text-decoration: none;
     color: #1f1f1f;
@@ -873,11 +878,11 @@ input[type="radio"]{
 .main_h2--Título {
     display: block;
     position: absolute;
-    left: 58%;
-    top: 300px;
+    left: -280px;
+    top: -70px;
     font-size: 6em;
-    animation: titulo 100s forwards;
-    animation-iteration-count: infinite;
+    animation: titulo 10s forwards;
+    animation-timing-function: linear;
     z-index: 20;
 }
 
@@ -888,8 +893,16 @@ input[type="radio"]{
     top: 470px;
     font-size: 1em;
     animation: titulo--h3 100s forwards;
-    animation-iteration-count: infinite;
     z-index: 20;
+}
+
+.main_h3--Título{
+    top: -30px;
+    font-size: 5em;
+    animation-duration: 23s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
 }
 
 .main_h4--Título{
@@ -919,4 +932,30 @@ input[type="radio"]{
 .main_p--subtitle{
     color: #1f1f1f;
     text-align: center;
+}
+
+/* MISCELACNEO */
+
+.main_div--animacionIndex{
+    width: 1200px;
+    height: 1000px;
+    position: absolute;
+    z-index: 700;
+    top: 0;
+}
+
+.main_div--overflowIndexChimenea,.main_div--overflowIndexChimenea--2{
+    position: absolute;
+    top: 163px;
+    left: 807px;
+    height: 138px;
+    width: 250px;
+    overflow: hidden;
+}
+
+.main_div--overflowIndexChimenea--2{
+    top: 350px;
+    left:  2px;
+    height: 400px;
+    width: 637px;
 }
