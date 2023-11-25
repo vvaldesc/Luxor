@@ -1,3 +1,8 @@
+@font-face {
+    font-family: UnscreenMK;
+    src: url('../assets/founts/UnscreenMK.ttf');
+}
+
 * {
     box-sizing: border-box;
 }
@@ -53,6 +58,12 @@ body {
 .container{
     background-color: rgb(236, 236, 236);
 }
+
+.container--index{
+    width: 1200px;
+    margin: auto;
+}
+
 
 .container--noMQ{
     margin: auto;
@@ -304,14 +315,28 @@ body {
     text-decoration: none;
 }
 
+
+
+
 /* INTENTO ANIMAR CON EL BOTON INICAR SESION */
 
 
 /* MAIN */
 
-.container_main {
+.container_main,.container_main--index {
     top: 0;
     width: 100%;
+}
+
+.container_main--index {
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.main_img{
+    border-radius: 10px;
+
 }
 
 
@@ -533,15 +558,35 @@ body {
 .main_article--1,  .main_article--2,  .main_article--3,  .main_article--4, .main_article--5, .main_article--6, .main_article--4--detalles{
     display: flex;
     align-items: end;
-    padding-bottom: 10px;
-    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    padding: 10px;
 }
+
+/* CADA ARTÍCULO */
 
 .main_article--1{
     background-image: url(../assets/img/lampara-de-pie-en-ceramica-warwick.webp);
 }
 .main_article--1:hover{
     animation: articlesUrl--1 infinite 5s;
+}
+
+.main_article--1:hover::before {
+    opacity: 0;
+}
+
+.main_article--1::before{
+    content: "PVP: 29,99€ \A LÁMPARA DE PIE WARWICK";
+    white-space: pre;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    text-shadow: 0 0 5px#1f1f1f1a;
+    opacity: 1;
+    transition: 1s all;
 }
 
 .main_article--2{
@@ -551,6 +596,22 @@ body {
     animation: articlesUrl--2 infinite 5s;
 }
 
+.main_article--2:hover::before {
+    opacity: 0;
+}
+
+.main_article--2::before{
+    content: "PVP: 79,99€ \A SILLA CÓMODA CON TEXTURA SEDA";
+    white-space: pre;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    text-shadow: 0 0 5px#1f1f1f1a;
+    opacity: 1;
+    transition: 1s all;
+}
+
+
 .main_article--3{
     background-image: url(../assets/img/sillon-colgante-en-ratan-taveira.webp);
 }
@@ -558,11 +619,41 @@ body {
     animation: articlesUrl--3 infinite 5s;
 }
 
+.main_article--3:hover::before {
+    opacity: 0;
+}
+
+.main_article--3::before{
+    content: "PVP: 56,99€ \A SILLÍN COLGANTE";
+    white-space: pre;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    text-shadow: 0 0 5px#1f1f1f1a;
+    opacity: 1;
+    transition: 1s all;
+}
+
 .main_article--4, .main_article--4--detalles{
     background-image: url(../assets/img/cojin-para-sofa-modular-en-algodon-dhel.webp);
 }
 .main_article--4:hover{
     animation: articlesUrl--4 infinite 5s;
+}
+
+.main_article--4:hover::before {
+    opacity: 0;
+}
+
+.main_article--4::before{
+    content: "PVP: 78,99€ \A COJÍN PARA SOFÁ HECHO DE SEDA A MANO";
+    white-space: pre;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    text-shadow: 0 0 5px#1f1f1f1a;
+    opacity: 1;
+    transition: 1s all;
 }
 
 .main_article--4--detalles{
@@ -582,6 +673,21 @@ body {
     animation: articlesUrl--5 infinite 5s;
 }
 
+.main_article--5:hover::before {
+    opacity: 0;
+}
+
+.main_article--5::before{
+    content: "PVP: 14,99€ \A DECORACIÓN SUREÑA COLGABLE";
+    white-space: pre;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    text-shadow: 0 0 5px#1f1f1f1a;
+    opacity: 1;
+    transition: 1s all;
+}
+
 .main_article--6{
     background-image: url(../assets/img/figura-decorativa-en-mdf-adara.webp);
 }
@@ -589,7 +695,24 @@ body {
     animation: articlesUrl--6 infinite 5s;
 }
 
+.main_article--6:hover::before {
+    opacity: 0;
+}
 
+.main_article--6::before{
+    content: "PVP: 9,99€ \A DECORACIÓN PARA SOBREMESA";
+    white-space: pre;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    text-shadow: 0 0 5px#1f1f1f1a;
+    opacity: 1;
+    transition: 1s all;
+}
+
+.article_div--complementosArticulo{
+    display: flex;
+}
 
 .article_img{
     width: 100%;
@@ -706,14 +829,30 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 6px #18181852;
 }
-
-
-/* TEXTO */
+/* FORM */
 
 form{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/* TEXTO */
+.section_p--banner{
+    font-family: 'UnscreenMK', sans-serif;
+    color: yellow;
+    font-size: 35px;
+    position: relative;
+    left: 1200px;
+    z-index: 50;
+    animation: blackFriday--banner;
+    animation-duration: 70s;
+    animation-delay: -5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    padding-bottom: 5px;
+    text-shadow: 0 0 40px rgb(255, 255, 0);
 }
 
 input[type="radio"]{
@@ -732,25 +871,33 @@ input[type="radio"]{
 }
 
 .main_h2--Título {
-    display: none;
+    display: block;
     position: absolute;
     left: 58%;
     top: 300px;
     font-size: 6em;
-    animation: titulo 70s forwards;
+    animation: titulo 100s forwards;
     animation-iteration-count: infinite;
     z-index: 20;
 }
 
-.main_h3--Título {
-    display: none;
+.main_h3--Título, .main_h4--Título{
+    display: block;
     position: absolute;
-    left: 58%;
-    top: 300px;
+    left: calc(58% + 7px);
+    top: 470px;
     font-size: 1em;
-    /*animation: titulo 70s forwards;
-    animation-iteration-count: infinite;*/
+    animation: titulo--h3 100s forwards;
+    animation-iteration-count: infinite;
     z-index: 20;
+}
+
+.main_h4--Título{
+    top: 720px;
+    left: calc(58% + 140px);
+    animation: titulo--h4 60s forwards;
+    animation-delay: 30s;
+    animation-iteration-count: infinite;
 }
 
 .div_p--presentación, .div_p--presentaciónBoton{

@@ -10,6 +10,36 @@
     }
 }
 
+@keyframes titulo--h3 {
+    0%{
+        transform: translate(0px, 0px);
+    }
+    50%{
+        transform: translate(60px, 90px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes titulo--h4 {
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(-200px);
+    }
+}
+
+@keyframes blackFriday--banner {
+    0%{
+        transform: translateX(-300px);
+    }
+    50%{
+        transform: translateX(-2000px);
+    }
+}
+
 @keyframes slideContainer {
     0%{
         transform: translateY(0px);
