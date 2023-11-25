@@ -102,6 +102,12 @@ main{
 
 @media screen and (min-width: 1100px) {
 
+    .main_article--4--detalles{
+        width: 500px;
+        height: 700px;
+    }
+
+
     .container--MQ{
     
         grid-template:
@@ -109,7 +115,22 @@ main{
         "carrusel main" 900px
         "footer footer" 200px /
         3fr 2fr;
-    
+        width: 95%;
+    }
+
+    .main_section--complementosBanner{
+        width: 500px;
+        margin: auto;
+    }
+
+    .main_section--complementosBanner::before{
+        transform: translateY(-100px);
+        width: 500px;
+        margin: auto;
+    }
+
+    .div_p--presentación{
+        font-size: 20px;
     }
 
     main{
@@ -131,7 +152,7 @@ main{
         "carrusel main" 900px
         "footer footer" 200px /
         3fr 2fr;
-    
+        padding: 20px;
     }
 
     main{
@@ -140,6 +161,11 @@ main{
 
     .main_section--complementosBanner{
         display: flex;
+    }
+
+    .main_section--complementosBanner{
+        width: 800px;
+        margin: auto;
     }
 
     .container_carrusel{
@@ -151,5 +177,10 @@ main{
         margin-top: 20px;
         width: calc(100% - 40px);
         height: calc(100% - 80px);
+        background-position-y: -110px;
+    }
+
+    .div_p--presentación{
+        font-size: 28px;
     }
 }

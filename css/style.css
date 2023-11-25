@@ -285,15 +285,19 @@ body {
     display: none;
 }
 
-.section_a:hover{
+.section_a:hover, .section_a--payMethod:hover{
     background-color: rgb(214, 214, 214);
     transition: all 50ms;
 }
 
-.section_a:hover .div_p--presentaciónBoton{
+.section_a:hover .div_p--presentaciónBoton ,.section_a--payMethod:hover .fa-brands{
     color: #1f1f1f !important;
     transition: all 50ms;
     font-weight: bold;
+}
+
+.section_a--payMethod:hover .fa-brands{
+    font-weight: lighter;
 }
 
 .section_a--fotosArticulos{

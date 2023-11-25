@@ -316,7 +316,7 @@
     from{
         transform: translateX(200px);
     }to{
-        transform: translateX(1000px);
+        transform: translateX(500px);
     }
 }
 
