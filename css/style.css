@@ -62,7 +62,7 @@ body {
 
 .container--MQ{
     margin: auto;
-    max-width: 1200px;
+    max-width: 1400px;
     width: 100%;
     background-color: rgb(236, 236, 236);
     display: grid;
@@ -333,10 +333,72 @@ body {
 
 /* SECTIONS */
 
+.main_section--complementosBanner::before{
+    content: "Complementa el look";
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-weight: 700;
+    color: black;
+    font-size: xx-large;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.301);
+    transform: translateY(-100px);
+    position: absolute;
+    font-weight: 700;
+    max-width: 900px;
+
+}
+
 .main_section--complementosBanner{
     background-color: black;
-    height: 200px;
+    height: 230px;
     border: 2px solid green;
+    overflow: hidden;
+    display: none;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.section_list--complementosLista{
+    margin: 20px auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    align-items: center;
+    animation: complementos 20s infinite;
+    animation-timing-function: linear;
+}
+
+.list_item--complementosBanner--1 ,.list_item--complementosBanner--2,.list_item--complementosBanner--3,.list_item--complementosBanner--4,.list_item--complementosBanner--5{
+    width: 120px;
+    background-size: cover;
+    height: 170px;
+    margin: 0 10px;
+    position: relative;
+    z-index: -1;
+}
+
+.list_item--complementosBanner--1{
+    background-image: url("../assets/img/lampara-de-pie-en-ceramica-warwick.webp");
+}
+
+.list_item--complementosBanner--2{
+    background-image: url("../assets/img/sillon-colgante-en-ratan-taveira.webp");
+}
+
+.list_item--complementosBanner--3{
+    background-image: url("../assets/img/figura-decorativa-en-mdf-adara.webp");
+}
+
+.list_item--complementosBanner--4{
+    background-image: url("../assets/img/sillon-en-chenilla-nicxon.webp");
+}
+
+.list_item--complementosBanner--5{
+    background-image: url("../assets/img/decoracion-de-pared-josep.jpg");
 }
 
 .main_hr{

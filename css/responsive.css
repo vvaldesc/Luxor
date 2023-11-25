@@ -83,17 +83,45 @@ main{
 
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 825px) {
 
     .container--MQ{
     
         grid-template:
         "header " 20px
-        "carrusel" 600px
+        "carrusel" 640px
         "main" 850px
         "footer " 200px /
         1fr;
     
+    }
+
+
+    .main_section--complementosBanner{
+        display: flex;
+
+    }
+
+}
+
+@media screen and (min-width: 1100px) {
+
+    .container--MQ{
+    
+        grid-template:
+        "header header" 20px
+        "carrusel main" 800px
+        "footer footer" 200px /
+        3fr 2fr;
+    
+    }
+
+    main{
+        padding-top: 60px;
+    }
+
+    .main_section--complementosBanner{
+        display: flex;
     }
 
 }

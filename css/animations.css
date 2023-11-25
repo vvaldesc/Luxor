@@ -310,3 +310,13 @@
         background-image: url(../assets/img/cojin-para-sofa-modular-en-algodon-dhel.webp);
     }
 }
+
+
+@keyframes complementos {
+    from{
+        transform: translateX(200px);
+    }to{
+        transform: translateX(1000px);
+    }
+}
+
