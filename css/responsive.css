@@ -1,21 +1,61 @@
 
-/*
+/* AREAS */
+
 .container__header{
     grid-area: header;
 }
 
-.container__main{
+main{
     grid-area: main;
+}
+
+.container_carrusel{
+    grid-area: carrusel;
 }
 
 .container__footer{
     grid-area: footer;
 }
 
-.container{
-    grid-template:
-    "header " 200px
-    "main " 1000px
-    "footer " 200px /
-    1fr;
-}*/
+/* Oculto elementos en mobile first */
+
+/* HEADER */
+.header_list{
+    display: none;
+}
+
+.header_a{
+    display: none;
+}
+
+.header_div{
+    width: 50px;
+}
+
+.header_a--rounded{
+    display: none;
+}
+
+/*  */
+
+@media screen and (min-width: 600px) {
+    .div_i--menuIcono{
+        display: none !important;
+    }
+
+    .header_list, .header_div{
+        display: flex;
+    }
+
+    .header_div{
+        width: 550px;
+    }
+
+    .header_a--rounded{
+        display: block;
+    }
+
+    .header_a{
+        display: block;
+    }
+}

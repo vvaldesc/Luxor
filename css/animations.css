@@ -228,3 +228,22 @@
         background-size: 140%;
     }
 }
+
+.desplegarAnim{
+    animation: 500ms desplegarAnim;
+    animation-fill-mode: forwards;
+}
+
+.desDesplegarAnim{
+    animation: 500ms desplegarAnim reverse;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes desplegarAnim {
+    from{
+        transform: translateY(0px);
+    }to{
+        transform: translateY(600px);
+    }
+}

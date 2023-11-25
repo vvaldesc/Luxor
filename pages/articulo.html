@@ -7,8 +7,10 @@
         <title>Luxor</title>
 
         <link rel="stylesheet" href="../css/style.css">
-        <link rel="stylesheet" href="../css/responsive.css">
         <link rel="stylesheet" href="../css/animations.css">
+        <link rel="stylesheet" href="../css/responsive.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,12 +22,33 @@
 
     </head>
     <body class="body--oscuro">
+
+        <section id="desplegable" class="section_desplegable">
+            <ul class="header_list--desplegable">
+                <li class="list_item--desplegable"><a class="header_a--desplegable" href="#">Inicio</a></li>
+                <li class="list_item--desplegable"><a class="header_a--desplegable"
+                        href="pages/catalogo.html">Catálogo</a></li>
+                <li class="list_item--desplegable"><a class="header_a--desplegable"
+                        href="pages/perfil.html">Perfil</a></li>
+                <li class="list_item--desplegable"><a class="header_a--desplegable"
+                        href="pages/faq.html">FAQ</a></li>
+                <li class="list_item--desplegable"><a class="header_a--desplegable"
+                        href="pages/faq.html">Registro</a></li>
+            </ul>
+        </section>
+
         <div style="height: 90px;"></div>
         <section class="main_section--2"></section>
 
-        <div class="container--noMQ">
+
+
+        <div class="container--MQ">
+
+
+
             <header class="container_header">
                 <div class="header_div">
+                    <i id="toggleMenu" class="fas fa-bars div_i--menuIcono"></i>
                     <p class="header_a--rounded">LH</p>
                     <ul class="header_list">
                         <li class="list_item"><a class="header_a" href="#">Inicio</a></li>
@@ -40,12 +63,19 @@
                 </div>
             </header>
 
-            
+            <section class="container_carrusel">
+                <article class="main_article--4--detalles" ></article>
+            </section>
+
+            <main>
+            </main>
 
             <footer class="container__footer">
             </footer>
 
         </div>
     </body>
+
+    <script src="../js/script.js"></script>
 
 </html>

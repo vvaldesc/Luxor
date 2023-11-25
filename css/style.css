@@ -21,7 +21,7 @@ body {
     background-color: rgb(107, 107, 107);
 }
 
-.container, .container--noMQ, .container--noMQ--login{
+.container, .container--noMQ, .container--noMQ--login, .container--MQ{
     position: relative;
     padding: 0;
     /*width: 1000px;*/
@@ -58,6 +58,21 @@ body {
     margin: auto;
     max-width: 1200px;
     background-color: rgb(236, 236, 236);
+}
+
+.container--MQ{
+    margin: auto;
+    max-width: 1200px;
+    background-color: rgb(236, 236, 236);
+    display: grid;
+
+    grid-template:
+    "header " 200px
+    "carrusel" 200px
+    "main" 1000px
+    "footer " 200px /
+    1fr;
+
 }
 
 .main_img {
@@ -183,21 +198,41 @@ body {
     font-weight: bold;
 }
 
-.header_list {
+.header_list, .header_list--desplegable {
     list-style: none;
     display: flex;
     margin-right: 10px;
 }
 
-.list_item {
+.header_list--desplegable{
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+
+.list_item, .list_item--desplegable {
     margin: 15px;
+}
+
+.list_item--desplegable{
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 1px solid white;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.422);
+}
+
+.list_item--desplegable:first-child{
+    text-align: center;
+    margin: 10px;
+    margin-top: 1px solid white;
+    margin-bottom: 1px solid white;
 }
 
 .header_btn {
     background-color: rgba(255, 255, 255, 0);
 }
 
-.header_a, .header_a--rounded, .header_a--article {
+.header_a, .header_a--rounded, .header_a--article, .header_a--desplegable {
     border-radius: 10px;
     color: white;
     text-decoration: none;
@@ -210,9 +245,14 @@ body {
     transition: all 0.4s;
 }
 
-.header_a--rounded{
+.header_a--rounded, .div_i--menuIcono{
     border: 2px solid rgba(255, 255, 255, 0.479);
     border-radius: 25%;
+}
+
+.div_i--menuIcono{
+    padding: 5px;
+    display: block;
 }
 
 .header_a--article{
@@ -397,7 +437,7 @@ body {
 }
 
 /* ARTÍCULOS */
-.main_article, .main_article--1,  .main_article--2,  .main_article--3,  .main_article--4, .main_article--5, .main_article--6{
+.main_article, .main_article--1,  .main_article--2,  .main_article--3,  .main_article--4, .main_article--5, .main_article--6, .main_article--4--detalles{
     height: 500px;
     margin: 15px;
     overflow: hidden;
@@ -407,7 +447,7 @@ body {
     transition: all 200ms;
 }
 
-.main_article--1,  .main_article--2,  .main_article--3,  .main_article--4, .main_article--5, .main_article--6{
+.main_article--1,  .main_article--2,  .main_article--3,  .main_article--4, .main_article--5, .main_article--6, .main_article--4--detalles{
     display: flex;
     align-items: end;
     padding-bottom: 10px;
@@ -435,7 +475,7 @@ body {
     animation: articlesUrl--3 infinite 5s;
 }
 
-.main_article--4{
+.main_article--4, .main_article--4--detalles{
     background-image: url(../assets/img/cojin-para-sofa-modular-en-algodon-dhel.webp);
 }
 .main_article--4:hover{
@@ -476,7 +516,6 @@ body {
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.11);
     backdrop-filter: blur(5px);
-    padding: 0 10px;
     z-index: 100;
     box-shadow: 0px 0px 10px inset rgba(0, 0, 0, 0.144);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.144);
@@ -484,7 +523,6 @@ body {
     height: 500px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 10px 0;
 }
 
@@ -508,6 +546,31 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+/* DESPLEGABLE */
+
+.section_desplegable{
+    margin: auto;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    border-radius: 15px;
+    background-color: rgba(61, 61, 61, 0.699);
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 10px inset rgba(0, 0, 0, 0.144);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.144);
+    min-height: 500px;
+    display: flex;
+    position: absolute;
+    z-index: 4000;
+    top: -500px;
+    left: 0px;
+    height: 500px;
 }
 
 /* FOOTER */
