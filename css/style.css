@@ -929,9 +929,22 @@ input[type="radio"]{
     background-color: black;
 }
 
-.main_p--subtitle{
+.main_p--subtitle,.main_p--subtitleTH,.main_p--subtitleTD,.main_p--subtitleLABEL{
     color: #1f1f1f;
     text-align: center;
+}
+
+.main_p--subtitleLABEL{
+    margin-bottom: 10px;
+}
+
+.main_p--subtitleTD{
+    width: 500px;
+}
+
+.main_p--subtitleTH{
+    color: #141414;
+    font-weight: bold;
 }
 
 /* MISCELACNEO */
@@ -958,4 +971,10 @@ input[type="radio"]{
     left:  2px;
     height: 400px;
     width: 637px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    display: flex;
 }
