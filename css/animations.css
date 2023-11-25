@@ -218,3 +218,13 @@
         background-image: url(../assets/img/figura-decorativa-en-mdf-adara.webp);
     }
 }
+
+@keyframes loginBackgroundAnim {
+    from{
+        background-position-x: right;
+        background-size: 150%;
+    }to{
+        background-position-x: left;
+        background-size: 140%;
+    }
+}

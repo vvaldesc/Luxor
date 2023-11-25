@@ -23,7 +23,7 @@
         <div style="height: 90px;"></div>
         <section class="main_section--2"></section>
 
-        <div class="container--noMQ">
+        <div class="container--noMQ--login">
             <header class="container_header">
                 <div class="header_div">
                     <p class="header_a--rounded">LH</p>
@@ -40,7 +40,42 @@
                 </div>
             </header>
 
-                <video loop class="main_video--1" src="../assets/video/pexels-tea-oebel-6583395 (Original).mp4" autoplay></video>
+            <main>
+                <div class="main_login">
+
+                    <label class="login_label" for="register">Registro</label>
+                    <form action="#" name="register">
+                        <input name="nombre" class="header_div--input" type="text" placeholder="Usuario">
+                        <input name="nombre" class="header_div--input" type="text" placeholder="Email">
+                        <input name="nombre" class="header_div--input" type="text" placeholder="Usuario o mail">
+
+
+                    <!--<label style="text-align: center; margin-top: 20px; margin-bottom: 10px;" class="login_label--peq" for="genero">Genero:</label>-->
+                    <div style="margin-top: 15px;" class="form_div--rowFlex">
+                        <div class="form_div--rowFlex">
+                            <div class="div_div--generoDiv">
+                              <label class="login_label--peq" for="masculino">Masculino</label>
+                              <input type="radio" id="masculino" name="genero" value="masculino">
+                            </div>
+                          
+                            <div class="div_div--generoDiv">
+                              <label class="login_label--peq" for="femenino">Femenino</label>
+                              <input type="radio" id="femenino" name="genero" value="femenino">
+                            </div>
+                          
+                            <div class="div_div--generoDiv">
+                              <label class="login_label--peq" for="otro">Otro</label>
+                              <input type="radio" id="otro" name="genero" value="otro">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="div_div--fechaNac">
+                            <label class="login_label--peq" for="fechaNacimiento">Fecha de Nacimiento:</label>
+                            <input style="padding-right: 6px;" type="date" id="fechaNacimiento" name="fechaNacimiento" class="header_div--input">
+                        </div>
+                    </form>
+                </div>
+            </main>
 
             <footer class="container__footer">
             </footer>

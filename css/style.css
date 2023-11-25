@@ -21,7 +21,7 @@ body {
     background-color: rgb(107, 107, 107);
 }
 
-.container, .container--noMQ{
+.container, .container--noMQ, .container--noMQ--login{
     position: relative;
     padding: 0;
     /*width: 1000px;*/
@@ -31,8 +31,23 @@ body {
     background-size: contain;
     background-position-x: center;
     background-repeat: no-repeat;*/
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    /*border-top-left-radius: 10px;
+    border-top-right-radius: 10px;*/
+    border-radius: 10px;
+}
+
+.container--noMQ--login{
+    margin: auto;
+    width: 1000px;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    background-position-x: right;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    background-image: url(../assets/img/iStock-1166941714.jpg);
+    background-size: 160%;
+    background-color: rgb(228, 228, 215);
+    animation: loginBackgroundAnim 60s ease-in-out;
 }
 
 .container{
@@ -76,7 +91,7 @@ body {
     z-index: 0;
 }
 
-.header_div, .header_div--article, .header_div--articleColor--Blue, .header_div--articleColor--Black, .header_div--articleColor--Beige {
+.header_div, .header_div--article, .header_div--articleColor--Blue, .header_div--articleColor--Black, .header_div--articleColor--Beige, .header_div--input {
     width: 550px;
     display: flex;
     justify-content: space-around;
@@ -91,13 +106,40 @@ body {
     transition: 0.4s all;
 }
 
-.header_div--article{
+.header_div--article, .header_div--input{
     width: 150px;
     height: 30px;
     background-color: rgba(34, 34, 34, 0.35);
     box-shadow: 0px 0px 2px rgba(63, 63, 63, 0.347);
     transition: 0.4s all;
     padding: 0;
+}
+
+.header_div--input{
+    width: auto;
+    text-align: center;
+    border: none;
+    outline: none;
+    margin: 10px;
+    font-weight: 700;
+}
+
+.header_div--input::placeholder{
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.header_div--input:focus {
+    /*background-color: rgba(255, 255, 255, 0.11);*/
+    box-shadow: 0px 0px 10px inset rgba(0, 0, 0, 0.144);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.144);
+    transition: 0.4s all;
+    color: white;
+}
+
+.header_div--input:focus::placeholder {
+    color: #00000000;
 }
 
 .header_div--articleColor--Blue, .header_div--articleColor--Black, .header_div--articleColor--Beige{
@@ -133,6 +175,8 @@ body {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.144);
     transition: 0.4s all;
 }
+
+
 
 .header_div--article:hover .header_a--article{
     color: black;
@@ -421,6 +465,50 @@ body {
     align-content: center;
 }
 
+/* Login */
+
+.main_login{
+    margin: auto;
+    width: 550px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.11);
+    backdrop-filter: blur(5px);
+    padding: 0 10px;
+    z-index: 100;
+    box-shadow: 0px 0px 10px inset rgba(0, 0, 0, 0.144);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.144);
+    transition: 0.4s all;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.form_div--rowFlex{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.div_div--generoDiv, .div_div--fechaNac{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.div_div--fechaNac{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
 /* FOOTER */
 
@@ -429,6 +517,26 @@ body {
 
 /* TEXTO */
 
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="radio"]{
+    border: none !important; /* NO FUNCIONA */
+}
+
+.login_label, .login_label--peq{
+    text-shadow: 0 0 4px rgba(49, 49, 49, 0.199);
+    color: #333333;
+    font-size: 3em;
+    display: block;
+}
+
+.login_label--peq{
+    font-size: smaller;
+}
 
 .main_h2--Título {
     display: none;
