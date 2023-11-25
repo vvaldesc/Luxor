@@ -3,18 +3,25 @@
 
 .container__header{
     grid-area: header;
+    border: 3px solid red;
+
 }
 
 main{
     grid-area: main;
+    border: 3px solid red;
+
 }
 
 .container_carrusel{
     grid-area: carrusel;
+    border: 3px solid red;
+
 }
 
 .container__footer{
     grid-area: footer;
+    border: 3px solid red;
 }
 
 /* Oculto elementos en mobile first */
@@ -58,4 +65,35 @@ main{
     .header_a{
         display: block;
     }
+
+    .container--MQ{
+    
+        grid-template:
+        "header " 20px
+        "carrusel" 600px
+        "main" 550px
+        "footer " 200px /
+        1fr;
+    
+    }
+
+    .div_div--flexboxPayMethod{
+        display: flex;
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+
+    .container--MQ{
+    
+        grid-template:
+        "header " 20px
+        "carrusel" 600px
+        "main" 850px
+        "footer " 200px /
+        1fr;
+    
+    }
+
 }

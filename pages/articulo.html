@@ -15,6 +15,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-s...tu-integridad-aqui..." crossorigin="anonymous" />
+
+
         <link
             href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@100;300&display=swap"
             rel="stylesheet">
@@ -36,6 +39,9 @@
                         href="pages/faq.html">Registro</a></li>
             </ul>
         </section>
+
+        <!-- Ejecuto el script de forma asíncrona para optimizar la carga del DOM -->
+        <script async src="../js/preCargaArt.js"></script>
 
         <div style="height: 90px;"></div>
         <section class="main_section--2"></section>
@@ -64,10 +70,44 @@
             </header>
 
             <section class="container_carrusel">
-                <article class="main_article--4--detalles" ></article>
+                <article class="main_article--4--detalles" >
+                    <div class="header_div--article">
+                        <p class="header_a--article">Colores disponibles</p>
+                    </div>
+                    <div class="header_div--articleColor--Blue">
+                    </div>
+                    <div class="header_div--articleColor--Black">
+                    </div>
+                    <div class="header_div--articleColor--Beige">
+                    </div>                    
+                </article>
             </section>
 
             <main>
+
+                <section class="main_section--complementosBanner"></section>
+
+
+                <p class="main_p--subtitle"><i>89% algodón, 11% poliéster<br>Hecho a mano<br>126x122(cm) </i></p>
+                <form action="#" name="register">
+                    <input type="number" class="header_div--input" placeholder="Uds.">
+
+                <div class="section_div--1">
+
+                    <p class="div_p--presentación">Cojín ideal para salón hecho a mano ideal para dar contexto a salón.</p>
+                    <a href="pages/catalogo.html" class="section_a"><p class="div_p--presentaciónBoton">Comprar</p></p></a>
+                    <div class="div_div--flexboxPayMethod">
+                        <a href="pages/catalogo.html" class="section_a--payMethod"><p class="div_p--presentaciónBoton"><i class="fa-brands fa-cc-visa"></i></p></p></a>
+                        <a href="pages/catalogo.html" class="section_a--payMethod"><p class="div_p--presentaciónBoton"><i class="fa-brands fa-cc-paypal"></i></p></p></a>
+                        <a href="pages/catalogo.html" class="section_a--payMethod"><p class="div_p--presentaciónBoton"><i class="fa-brands fa-cc-apple-pay"></i></p></p></a>
+                    </div>
+
+                </div>
+
+                <p class="main_p--subtitle"><i>Envíos internacionales no disponibles</i></p>
+
+            </form>
+
             </main>
 
             <footer class="container__footer">

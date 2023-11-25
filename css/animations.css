@@ -247,3 +247,66 @@
         transform: translateY(600px);
     }
 }
+
+@keyframes articlesUrl--4--colores {
+    0% {
+        background-image: url(../assets/img/cojin-para-sofa-modular-en-algodon-dhel.webp);
+    }
+    7.5% {
+        background-image: url(../assets/img/cojin-para-sofa-modular-en-algodon-dhel.webp);
+    }
+    10% {
+        background-image: url(../assets/img/cojin-para-sofa-modular-en-algodon-dhel\ \(6\).webp);
+    }
+    20% {
+        background-image: url(../assets/img/cojin-para-sofa-modular-en-algodon-dhel\ \(6\).webp);
+    }
+    22.5% {
+        background-image: url(../assets/img/cojin-para-sofa-modular-en-algodon-dhel\ \(4\).webp);
+    }
+    32.5% {
+        background-image: url(../assets/img/cojin-para-sofa-modular-en-algodon-dhel\ \(4\).webp);
+    }
+    35% {
+        background-image: url(../assets/img/cojin-para-sofa-modular-en-algodon-dhel\ \(2\).webp);
+    }
+    45% {
+        background-image: url(../assets/img/cojin-para-sofa-modular-en-algodon-dhel\ \(2\).webp);
+    }
+    47.5% {
+        background-image: url(../assets/img/cojin-para-sofa-modular-en-algodon-dhel\ \(2\).jpg);
+    }
+    50% {
+        background-image: url(../assets/img/cojin-para-sofa-modular-en-algodon-dhel\ \(2\).jpg);
+    }
+    50% {
+        background-image: url(../assets/img/cojin-para-sofa-modular-en-algodon-dhel.jpg);
+    }
+    52.5% {
+        background-image: url(../assets/img/cojin-para-sofa-modular-en-algodon-dhel.jpg);
+    }
+    55% {
+        background-image: url(../assets/img/cojin-para-sofa-modular-en-algodon-dhel\ \(3\).webp);
+    }
+    65% {
+        background-image: url(../assets/img/cojin-para-sofa-modular-en-algodon-dhel\ \(3\).webp);
+    }
+    67.5% {
+        background-image: url(../assets/img/cojin-para-sofa-modular-en-algodon-dhel\ \(3\).jpg);
+    }
+    77.5% {
+        background-image: url(../assets/img/cojin-para-sofa-modular-en-algodon-dhel\ \(3\).jpg);
+    }
+    80% {
+        background-image: url(../assets/img/cojin-para-sofa-modular-en-algodon-dhel\ \(1\).jpg);
+    }
+    90% {
+        background-image: url(../assets/img/cojin-para-sofa-modular-en-algodon-dhel\ \(1\).jpg);
+    }
+    92.5% {
+        background-image: url(../assets/img/cojin-para-sofa-modular-en-algodon-dhel.webp);
+    }
+    100% {
+        background-image: url(../assets/img/cojin-para-sofa-modular-en-algodon-dhel.webp);
+    }
+}

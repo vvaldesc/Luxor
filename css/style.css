@@ -63,13 +63,14 @@ body {
 .container--MQ{
     margin: auto;
     max-width: 1200px;
+    width: 100%;
     background-color: rgb(236, 236, 236);
     display: grid;
 
     grid-template:
-    "header " 200px
-    "carrusel" 200px
-    "main" 1000px
+    "header " 20px
+    "carrusel" 600px
+    "main" 450px
     "footer " 200px /
     1fr;
 
@@ -105,6 +106,7 @@ body {
     justify-content: center;
     z-index: 0;
 }
+
 
 .header_div, .header_div--article, .header_div--articleColor--Blue, .header_div--articleColor--Black, .header_div--articleColor--Beige, .header_div--input {
     width: 550px;
@@ -259,7 +261,7 @@ body {
     font-size: small;
 }
 
-.section_a{
+.section_a, .section_a--payMethod{
     display: flex;
     justify-content: center;
     margin-top: 20px;
@@ -271,6 +273,16 @@ body {
     font-weight: normal;
     transition: all 200ms !important;
     text-decoration: none;
+}
+
+.section_a--payMethod{
+ width: 39%;
+ margin: 5px;
+}
+
+.div_div--flexboxPayMethod{
+    margin-top: 10px;
+    display: none;
 }
 
 .section_a:hover{
@@ -320,6 +332,12 @@ body {
 /* PORTADA */
 
 /* SECTIONS */
+
+.main_section--complementosBanner{
+    background-color: black;
+    height: 200px;
+    border: 2px solid green;
+}
 
 .main_hr{
     content: "";
@@ -482,6 +500,16 @@ body {
     animation: articlesUrl--4 infinite 5s;
 }
 
+.main_article--4--detalles{
+    width: 300px;
+    height: 450px;
+    background-position-y: 0px;
+}
+
+.main_article--4--detalles{
+    animation: articlesUrl--4--colores infinite 10s;
+}
+
 .main_article--5{
     background-image: url(../assets/img/decoracion-de-pared-josep.webp);
 }
@@ -503,6 +531,27 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
+}
+
+.container_carrusel{
+    margin: auto;
+}
+
+
+.container_carrusel::before{
+    content: "Cojin para sofá modular";
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.192);
+    box-shadow: 0 0 4px #1f1f1f3b;
+    margin: auto;
+    width: fit-content;
+    padding: 10px 20px;
+    display: block;
+    color: #1f1f1f;
+    position: relative;
+    text-align: center;
+    font-size: larger;
+    font-weight: 700;
 }
 
 /* Login */
@@ -637,4 +686,9 @@ input[type="radio"]{
 .container_footer{
     height: 100px;
     background-color: black;
+}
+
+.main_p--subtitle{
+    color: #1f1f1f;
+    text-align: center;
 }
